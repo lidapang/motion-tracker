@@ -714,6 +714,86 @@ Source: www.cypressindustries.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="mtk3339">
+<description>MTK3339 GPS module</description>
+<packages>
+<package name="MTK3339">
+<wire x1="-8" y1="-8" x2="8" y2="-8" width="0.127" layer="21"/>
+<wire x1="8" y1="-8" x2="8" y2="8" width="0.127" layer="21"/>
+<wire x1="8" y1="8" x2="-8" y2="8" width="0.127" layer="21"/>
+<wire x1="-8" y1="8" x2="-8" y2="-8" width="0.127" layer="21"/>
+<hole x="0.5" y="0.85" drill="3"/>
+<smd name="P$10" x="-8" y="-6.75" dx="2" dy="1" layer="1"/>
+<smd name="P$09" x="-8" y="-5.25" dx="2" dy="1" layer="1"/>
+<smd name="P$08" x="-8" y="-3.75" dx="2" dy="1" layer="1"/>
+<smd name="P$07" x="-8" y="-2.25" dx="2" dy="1" layer="1"/>
+<smd name="P$06" x="-8" y="-0.75" dx="2" dy="1" layer="1"/>
+<smd name="P$05" x="-8" y="0.75" dx="2" dy="1" layer="1"/>
+<smd name="P$04" x="-8" y="2.25" dx="2" dy="1" layer="1"/>
+<smd name="P$03" x="-8" y="3.75" dx="2" dy="1" layer="1"/>
+<smd name="P$02" x="-8" y="5.25" dx="2" dy="1" layer="1"/>
+<smd name="P$01" x="-8" y="6.75" dx="2" dy="1" layer="1"/>
+<smd name="P$11" x="8" y="-6.75" dx="2" dy="1" layer="1"/>
+<smd name="P$13" x="8" y="6.75" dx="2" dy="1" layer="1"/>
+<smd name="P$12" x="8" y="0.75" dx="2" dy="1" layer="1"/>
+<text x="-6.5" y="-7.5" size="1.27" layer="21">MTK3339</text>
+<circle x="-6" y="6.75" radius="0.3" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MTK3339">
+<pin name="VCC" x="-5.08" y="0" length="middle" direction="pwr"/>
+<pin name="NC$1" x="0" y="-2.54" visible="off" length="point" direction="nc"/>
+<pin name="GND$1" x="-5.08" y="-5.08" length="middle" direction="pwr"/>
+<pin name="VBACKUP" x="-5.08" y="-7.62" length="middle" direction="pwr"/>
+<pin name="3DFIX" x="-5.08" y="-10.16" length="middle" direction="out"/>
+<pin name="1PPS" x="-5.08" y="-12.7" length="middle" direction="out"/>
+<pin name="NC$2" x="0" y="-15.24" visible="off" length="point" direction="nc"/>
+<pin name="GND$2" x="-5.08" y="-17.78" length="middle" direction="pwr"/>
+<pin name="TX" x="-5.08" y="-20.32" length="middle" direction="out"/>
+<pin name="RX" x="-5.08" y="-22.86" length="middle" direction="in"/>
+<pin name="GND$3" x="33.02" y="-22.86" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND$4" x="33.02" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND$5" x="33.02" y="0" length="middle" direction="pwr" rot="R180"/>
+<wire x1="0" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="2.54" x2="27.94" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-25.4" x2="0" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="-25.4" x2="0" y2="2.54" width="0.254" layer="94"/>
+<text x="0" y="3.048" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.254" y="-27.686" size="1.778" layer="96">MTK3339</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MTK3339">
+<description>GlobalTop FGPMMOPA6C GPS Module</description>
+<gates>
+<gate name="G$1" symbol="MTK3339" x="-12.7" y="12.7"/>
+</gates>
+<devices>
+<device name="" package="MTK3339">
+<connects>
+<connect gate="G$1" pin="1PPS" pad="P$06"/>
+<connect gate="G$1" pin="3DFIX" pad="P$05"/>
+<connect gate="G$1" pin="GND$1" pad="P$03"/>
+<connect gate="G$1" pin="GND$2" pad="P$08"/>
+<connect gate="G$1" pin="GND$3" pad="P$11"/>
+<connect gate="G$1" pin="GND$4" pad="P$12"/>
+<connect gate="G$1" pin="GND$5" pad="P$13"/>
+<connect gate="G$1" pin="NC$1" pad="P$02"/>
+<connect gate="G$1" pin="NC$2" pad="P$07"/>
+<connect gate="G$1" pin="RX" pad="P$10"/>
+<connect gate="G$1" pin="TX" pad="P$09"/>
+<connect gate="G$1" pin="VBACKUP" pad="P$04"/>
+<connect gate="G$1" pin="VCC" pad="P$01"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -739,6 +819,7 @@ Source: www.cypressindustries.com</description>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="bmp085" deviceset="BMP085" device=""/>
+<part name="U$4" library="mtk3339" deviceset="MTK3339" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -755,6 +836,7 @@ Source: www.cypressindustries.com</description>
 <instance part="P+2" gate="1" x="35.56" y="-5.08" rot="R270"/>
 <instance part="GND2" gate="1" x="35.56" y="5.08" rot="R90"/>
 <instance part="U$2" gate="G$1" x="111.76" y="2.54"/>
+<instance part="U$4" gate="G$1" x="20.32" y="76.2"/>
 </instances>
 <busses>
 </busses>

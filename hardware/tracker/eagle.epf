@@ -340,7 +340,7 @@ UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib
 
 [Win_1]
 Type="Control Panel"
-Loc="196 132 1795 1287"
+Loc="0 22 1599 1177"
 State=2
 Number=0
 
