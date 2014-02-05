@@ -335,8 +335,8 @@ UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib
 UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/ml.lbr"
 UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/cc2540.lbr"
 UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/bmp085.lbr"
-UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/kcsc02.lbr"
-UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/mtk3339.lbr"
+UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/kcsx02.lbr"
+UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/FGPMMOPA6C.lbr"
 
 [Win_1]
 Type="Control Panel"

@@ -714,10 +714,11 @@ Source: www.cypressindustries.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="mtk3339">
+<library name="FGPMMOPA6C">
 <description>MTK3339 GPS module</description>
 <packages>
 <package name="MTK3339">
+<description>FGPMMOPA6C GPS Standalone Module</description>
 <wire x1="-8" y1="-8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="-8" y2="8" width="0.127" layer="21"/>
@@ -742,25 +743,28 @@ Source: www.cypressindustries.com</description>
 </packages>
 <symbols>
 <symbol name="MTK3339">
-<pin name="VCC" x="-5.08" y="0" length="middle" direction="pwr"/>
-<pin name="NC$1" x="0" y="-2.54" visible="off" length="point" direction="nc"/>
-<pin name="GND$1" x="-5.08" y="-5.08" length="middle" direction="pwr"/>
-<pin name="VBACKUP" x="-5.08" y="-7.62" length="middle" direction="pwr"/>
-<pin name="3DFIX" x="-5.08" y="-10.16" length="middle" direction="out"/>
-<pin name="1PPS" x="-5.08" y="-12.7" length="middle" direction="out"/>
-<pin name="NC$2" x="0" y="-15.24" visible="off" length="point" direction="nc"/>
-<pin name="GND$2" x="-5.08" y="-17.78" length="middle" direction="pwr"/>
-<pin name="TX" x="-5.08" y="-20.32" length="middle" direction="out"/>
-<pin name="RX" x="-5.08" y="-22.86" length="middle" direction="in"/>
-<pin name="GND$3" x="33.02" y="-22.86" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND$4" x="33.02" y="-10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND$5" x="33.02" y="0" length="middle" direction="pwr" rot="R180"/>
-<wire x1="0" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
-<wire x1="27.94" y1="2.54" x2="27.94" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="27.94" y1="-25.4" x2="0" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="0" y1="-25.4" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="3.048" size="1.778" layer="95">&gt;NAME</text>
-<text x="-0.254" y="-27.686" size="1.778" layer="96">MTK3339</text>
+<description>FGPMMOPA6C GPS Standalone Module
+
+MTK3339 chipset based module</description>
+<pin name="VCC" x="-20.32" y="10.16" length="middle" direction="pwr"/>
+<pin name="NC$1" x="-15.24" y="7.62" visible="off" length="point" direction="nc"/>
+<pin name="GND$1" x="-20.32" y="5.08" length="middle" direction="pwr"/>
+<pin name="VBACKUP" x="-20.32" y="2.54" length="middle" direction="pwr"/>
+<pin name="3DFIX" x="-20.32" y="0" length="middle" direction="out"/>
+<pin name="1PPS" x="-20.32" y="-2.54" length="middle" direction="out"/>
+<pin name="NC$2" x="-15.24" y="-5.08" visible="off" length="point" direction="nc"/>
+<pin name="GND$2" x="-20.32" y="-7.62" length="middle" direction="pwr"/>
+<pin name="TX" x="-20.32" y="-10.16" length="middle" direction="out"/>
+<pin name="RX" x="-20.32" y="-12.7" length="middle" direction="in"/>
+<pin name="GND$3" x="17.78" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND$4" x="17.78" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND$5" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-15.24" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
+<text x="-15.24" y="13.208" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.494" y="-17.526" size="1.778" layer="96">MTK3339</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -785,6 +789,139 @@ Source: www.cypressindustries.com</description>
 <connect gate="G$1" pin="TX" pad="P$09"/>
 <connect gate="G$1" pin="VBACKUP" pad="P$04"/>
 <connect gate="G$1" pin="VCC" pad="P$01"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="kcsx02">
+<description>KCSx02 7 Segment LED modules</description>
+<packages>
+<package name="KCSX02">
+<description>KCSA02 and KCSC02 package</description>
+<wire x1="0" y1="0" x2="6.9" y2="0" width="0.127" layer="21"/>
+<wire x1="6.9" y1="0" x2="6.9" y2="1" width="0.127" layer="21"/>
+<wire x1="6.9" y1="1" x2="6.9" y2="9" width="0.127" layer="21"/>
+<wire x1="6.9" y1="9" x2="6.9" y2="10" width="0.127" layer="21"/>
+<wire x1="6.9" y1="10" x2="0" y2="10" width="0.127" layer="21"/>
+<wire x1="0" y1="10" x2="0" y2="9" width="0.127" layer="21"/>
+<wire x1="0" y1="9" x2="0" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="9" x2="6.9" y2="9" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="6.9" y2="1" width="0.127" layer="21"/>
+<circle x="5.85" y="2.35" radius="0.25495" width="0.127" layer="21"/>
+<wire x1="2" y1="5" x2="4.5" y2="5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="5.5" x2="1.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="2" y1="8" x2="4.5" y2="8" width="0.127" layer="21"/>
+<wire x1="5" y1="7.5" x2="5" y2="5.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="4.5" x2="1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="4.5" y2="2" width="0.127" layer="21"/>
+<wire x1="5" y1="4.5" x2="5" y2="2.5" width="0.127" layer="21"/>
+<smd name="P$1" x="0.6" y="0.01" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$2" x="2.04" y="0.01" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$3" x="3.49" y="0.03" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$4" x="4.9" y="0.03" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$5" x="6.34" y="0.03" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$6" x="6.34" y="9.97" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$7" x="4.91" y="9.95" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$8" x="3.47" y="9.95" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$9" x="2.04" y="9.95" dx="0.9" dy="2.8" layer="1"/>
+<smd name="P$10" x="0.59" y="9.97" dx="0.9" dy="2.8" layer="1"/>
+<text x="0.06" y="11.64" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="KCSX02-SM">
+<wire x1="0" y1="0" x2="6.9" y2="0" width="0.127" layer="21"/>
+<wire x1="6.9" y1="0" x2="6.9" y2="1" width="0.127" layer="21"/>
+<wire x1="6.9" y1="1" x2="6.9" y2="9" width="0.127" layer="21"/>
+<wire x1="6.9" y1="9" x2="6.9" y2="10" width="0.127" layer="21"/>
+<wire x1="6.9" y1="10" x2="0" y2="10" width="0.127" layer="21"/>
+<wire x1="0" y1="10" x2="0" y2="9" width="0.127" layer="21"/>
+<wire x1="0" y1="9" x2="0" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="9" x2="6.9" y2="9" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="6.9" y2="1" width="0.127" layer="21"/>
+<circle x="5.85" y="2.35" radius="0.25495" width="0.127" layer="21"/>
+<wire x1="2" y1="5" x2="4.5" y2="5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="5.5" x2="1.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="2" y1="8" x2="4.5" y2="8" width="0.127" layer="21"/>
+<wire x1="5" y1="7.5" x2="5" y2="5.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="4.5" x2="1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="4.5" y2="2" width="0.127" layer="21"/>
+<wire x1="5" y1="4.5" x2="5" y2="2.5" width="0.127" layer="21"/>
+<smd name="P$1" x="0.57" y="0.68" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$2" x="2.01" y="0.68" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$3" x="3.46" y="0.7" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$4" x="4.87" y="0.7" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$5" x="6.31" y="0.7" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$6" x="6.32" y="9.3" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$7" x="4.89" y="9.28" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$8" x="3.45" y="9.28" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$9" x="2.02" y="9.28" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$10" x="0.57" y="9.3" dx="0.9" dy="1.4" layer="1"/>
+<text x="0.06" y="11.64" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="KCSA02">
+<description>KCSA02 LED 7 Segment common anode</description>
+<pin name="A" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="B" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="C" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="D" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="E" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="F" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="G" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="DP" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="ANODE$1" x="-12.7" y="7.62" length="middle"/>
+<pin name="ANODE$2" x="-12.7" y="5.08" length="middle"/>
+<wire x1="-7.62" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="10.922" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-14.732" size="1.27" layer="95">KCSA02</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KCSA02-109">
+<description>KCSA02-109 LED 7 Segment</description>
+<gates>
+<gate name="G$1" symbol="KCSA02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-DEFAULT" package="KCSX02">
+<connects>
+<connect gate="G$1" pin="A" pad="P$7"/>
+<connect gate="G$1" pin="ANODE$1" pad="P$3"/>
+<connect gate="G$1" pin="ANODE$2" pad="P$8"/>
+<connect gate="G$1" pin="B" pad="P$6"/>
+<connect gate="G$1" pin="C" pad="P$4"/>
+<connect gate="G$1" pin="D" pad="P$2"/>
+<connect gate="G$1" pin="DP" pad="P$5"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="F" pad="P$9"/>
+<connect gate="G$1" pin="G" pad="P$10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMALL" package="KCSX02-SM">
+<connects>
+<connect gate="G$1" pin="A" pad="P$7"/>
+<connect gate="G$1" pin="ANODE$1" pad="P$3"/>
+<connect gate="G$1" pin="ANODE$2" pad="P$8"/>
+<connect gate="G$1" pin="B" pad="P$6"/>
+<connect gate="G$1" pin="C" pad="P$4"/>
+<connect gate="G$1" pin="D" pad="P$2"/>
+<connect gate="G$1" pin="DP" pad="P$5"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="F" pad="P$9"/>
+<connect gate="G$1" pin="G" pad="P$10"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -819,7 +956,12 @@ Source: www.cypressindustries.com</description>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="bmp085" deviceset="BMP085" device=""/>
-<part name="U$4" library="mtk3339" deviceset="MTK3339" device=""/>
+<part name="U$4" library="FGPMMOPA6C" deviceset="MTK3339" device=""/>
+<part name="U$5" library="kcsx02" deviceset="KCSA02-109" device="-SMALL"/>
+<part name="U$6" library="kcsx02" deviceset="KCSA02-109" device="-SMALL"/>
+<part name="U$7" library="kcsx02" deviceset="KCSA02-109" device="-SMALL"/>
+<part name="U$8" library="kcsx02" deviceset="KCSA02-109" device="-SMALL"/>
+<part name="U$9" library="kcsx02" deviceset="KCSA02-109" device="-SMALL"/>
 </parts>
 <sheets>
 <sheet>
@@ -836,7 +978,12 @@ Source: www.cypressindustries.com</description>
 <instance part="P+2" gate="1" x="35.56" y="-5.08" rot="R270"/>
 <instance part="GND2" gate="1" x="35.56" y="5.08" rot="R90"/>
 <instance part="U$2" gate="G$1" x="111.76" y="2.54"/>
-<instance part="U$4" gate="G$1" x="20.32" y="76.2"/>
+<instance part="U$4" gate="G$1" x="33.02" y="68.58"/>
+<instance part="U$5" gate="G$1" x="45.72" y="-55.88"/>
+<instance part="U$6" gate="G$1" x="78.74" y="-55.88"/>
+<instance part="U$7" gate="G$1" x="111.76" y="-55.88"/>
+<instance part="U$8" gate="G$1" x="144.78" y="-55.88"/>
+<instance part="U$9" gate="G$1" x="177.8" y="-55.88"/>
 </instances>
 <busses>
 </busses>

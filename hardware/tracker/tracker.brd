@@ -249,10 +249,11 @@ Source: http://www.cypressindustries.com/pdf/32005-301.pdf</description>
 </package>
 </packages>
 </library>
-<library name="mtk3339">
+<library name="FGPMMOPA6C">
 <description>MTK3339 GPS module</description>
 <packages>
 <package name="MTK3339">
+<description>FGPMMOPA6C GPS Standalone Module</description>
 <wire x1="-8" y1="-8" x2="8" y2="-8" width="0.127" layer="21"/>
 <wire x1="8" y1="-8" x2="8" y2="8" width="0.127" layer="21"/>
 <wire x1="8" y1="8" x2="-8" y2="8" width="0.127" layer="21"/>
@@ -273,6 +274,42 @@ Source: http://www.cypressindustries.com/pdf/32005-301.pdf</description>
 <smd name="P$12" x="8" y="0.75" dx="2" dy="1" layer="1"/>
 <text x="-6.5" y="-7.5" size="1.27" layer="21">MTK3339</text>
 <circle x="-6" y="6.75" radius="0.3" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="kcsx02">
+<description>KCSx02 7 Segment LED modules</description>
+<packages>
+<package name="KCSX02-SM">
+<wire x1="0" y1="0" x2="6.9" y2="0" width="0.127" layer="21"/>
+<wire x1="6.9" y1="0" x2="6.9" y2="1" width="0.127" layer="21"/>
+<wire x1="6.9" y1="1" x2="6.9" y2="9" width="0.127" layer="21"/>
+<wire x1="6.9" y1="9" x2="6.9" y2="10" width="0.127" layer="21"/>
+<wire x1="6.9" y1="10" x2="0" y2="10" width="0.127" layer="21"/>
+<wire x1="0" y1="10" x2="0" y2="9" width="0.127" layer="21"/>
+<wire x1="0" y1="9" x2="0" y2="1" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="9" x2="6.9" y2="9" width="0.127" layer="21"/>
+<wire x1="0" y1="1" x2="6.9" y2="1" width="0.127" layer="21"/>
+<circle x="5.85" y="2.35" radius="0.25495" width="0.127" layer="21"/>
+<wire x1="2" y1="5" x2="4.5" y2="5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="5.5" x2="1.5" y2="7.5" width="0.127" layer="21"/>
+<wire x1="2" y1="8" x2="4.5" y2="8" width="0.127" layer="21"/>
+<wire x1="5" y1="7.5" x2="5" y2="5.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="4.5" x2="1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="4.5" y2="2" width="0.127" layer="21"/>
+<wire x1="5" y1="4.5" x2="5" y2="2.5" width="0.127" layer="21"/>
+<smd name="P$1" x="0.57" y="0.68" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$2" x="2.01" y="0.68" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$3" x="3.46" y="0.7" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$4" x="4.87" y="0.7" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$5" x="6.31" y="0.7" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$6" x="6.32" y="9.3" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$7" x="4.89" y="9.28" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$8" x="3.45" y="9.28" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$9" x="2.02" y="9.28" dx="0.9" dy="1.4" layer="1"/>
+<smd name="P$10" x="0.57" y="9.3" dx="0.9" dy="1.4" layer="1"/>
+<text x="0.06" y="11.64" size="1.27" layer="25">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -468,7 +505,7 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="adxl345" package="LGA14" value="ADXL345" x="32.13" y="47.89"/>
+<element name="U$1" library="adxl345" package="LGA14" value="ADXL345" x="55.13" y="5.89"/>
 <element name="X1" library="con-cypressindustries" package="32005-301" value="MINI-USB-SCHIELD-32005-301" x="5" y="8" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="5" y="8" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="5" y="8" size="1.778" layer="27" display="off"/>
@@ -477,7 +514,12 @@ design rules under a new name.</description>
 </element>
 <element name="U$3" library="cc2540" package="CC2540-MINI-BLE" value="CC2540-MINI-BLE" x="16" y="21" rot="R90"/>
 <element name="U$2" library="bmp085" package="BMP085" value="BMP085" x="34" y="16"/>
-<element name="U$4" library="mtk3339" package="MTK3339" value="MTK3339" x="9" y="55"/>
+<element name="U$4" library="FGPMMOPA6C" package="MTK3339" value="MTK3339" x="51" y="34"/>
+<element name="U$5" library="kcsx02" package="KCSX02-SM" value="KCSA02-109-SMALL" x="19" y="51"/>
+<element name="U$6" library="kcsx02" package="KCSX02-SM" value="KCSA02-109-SMALL" x="26" y="51"/>
+<element name="U$7" library="kcsx02" package="KCSX02-SM" value="KCSA02-109-SMALL" x="33" y="51"/>
+<element name="U$8" library="kcsx02" package="KCSX02-SM" value="KCSA02-109-SMALL" x="40" y="51"/>
+<element name="U$9" library="kcsx02" package="KCSX02-SM" value="KCSA02-109-SMALL" x="47" y="51"/>
 </elements>
 <signals>
 <signal name="VDDIO">
@@ -489,17 +531,17 @@ design rules under a new name.</description>
 <signal name="GND$1">
 <contactref element="U$1" pad="P$2"/>
 <contactref element="U$4" pad="P$03"/>
-<wire x1="31.03" y1="49.09" x2="1" y2="58.75" width="0" layer="19" extent="1-1"/>
+<wire x1="43" y1="37.75" x2="54.03" y2="7.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND$2">
 <contactref element="U$1" pad="P$4"/>
 <contactref element="U$4" pad="P$08"/>
-<wire x1="31.03" y1="47.49" x2="1" y2="51.25" width="0" layer="19" extent="1-1"/>
+<wire x1="43" y1="30.25" x2="54.03" y2="5.49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND$3">
 <contactref element="U$1" pad="P$5"/>
 <contactref element="U$4" pad="P$11"/>
-<wire x1="31.03" y1="46.69" x2="17" y2="48.25" width="0" layer="19" extent="1-1"/>
+<wire x1="59" y1="27.25" x2="54.03" y2="4.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="X1" pad="M4"/>
@@ -519,7 +561,7 @@ design rules under a new name.</description>
 <signal name="VCC">
 <contactref element="U$3" pad="P$03"/>
 <contactref element="U$4" pad="P$01"/>
-<wire x1="7.7" y1="21" x2="1" y2="61.75" width="0" layer="19" extent="1-1"/>
+<wire x1="43" y1="40.75" x2="7.7" y2="21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+5V">
 <contactref element="X1" pad="1"/>
