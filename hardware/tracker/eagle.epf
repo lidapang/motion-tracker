@@ -337,10 +337,13 @@ UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib
 UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/bmp085.lbr"
 UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/kcsx02.lbr"
 UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/FGPMMOPA6C.lbr"
+UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/TP4056.lbr"
+UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/lm1117.lbr"
+UsedLibrary="/Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/lib/micro-sd.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="0 22 1599 1177"
+Loc="0 22 760 556"
 State=2
 Number=0
 
