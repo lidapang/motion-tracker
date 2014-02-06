@@ -11360,8 +11360,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pin name="F" x="15.24" y="-5.08" length="middle" rot="R180"/>
 <pin name="G" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="DP" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<pin name="ANODE$1" x="-12.7" y="7.62" length="middle"/>
-<pin name="ANODE$2" x="-12.7" y="5.08" length="middle"/>
+<pin name="ANODE@1" x="-12.7" y="7.62" length="middle"/>
+<pin name="ANODE@2" x="-12.7" y="5.08" length="middle"/>
 <wire x1="-7.62" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
@@ -11380,8 +11380,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <device name="-DEFAULT" package="KCSX02">
 <connects>
 <connect gate="G$1" pin="A" pad="7"/>
-<connect gate="G$1" pin="ANODE$1" pad="3"/>
-<connect gate="G$1" pin="ANODE$2" pad="8"/>
+<connect gate="G$1" pin="ANODE@1" pad="3"/>
+<connect gate="G$1" pin="ANODE@2" pad="8"/>
 <connect gate="G$1" pin="B" pad="6"/>
 <connect gate="G$1" pin="C" pad="4"/>
 <connect gate="G$1" pin="D" pad="2"/>
@@ -11397,8 +11397,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <device name="-SMALL" package="KCSX02-SM">
 <connects>
 <connect gate="G$1" pin="A" pad="7"/>
-<connect gate="G$1" pin="ANODE$1" pad="3"/>
-<connect gate="G$1" pin="ANODE$2" pad="8"/>
+<connect gate="G$1" pin="ANODE@1" pad="3"/>
+<connect gate="G$1" pin="ANODE@2" pad="8"/>
 <connect gate="G$1" pin="B" pad="6"/>
 <connect gate="G$1" pin="C" pad="4"/>
 <connect gate="G$1" pin="D" pad="2"/>
@@ -12359,36 +12359,36 @@ push-push type</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="ANODE$2"/>
-<pinref part="U$1" gate="G$1" pin="ANODE$1"/>
+<pinref part="U$1" gate="G$1" pin="ANODE@2"/>
+<pinref part="U$1" gate="G$1" pin="ANODE@1"/>
 <wire x1="0" y1="-132.08" x2="0" y2="-129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="ANODE$2"/>
-<pinref part="U$2" gate="G$1" pin="ANODE$1"/>
+<pinref part="U$2" gate="G$1" pin="ANODE@2"/>
+<pinref part="U$2" gate="G$1" pin="ANODE@1"/>
 <wire x1="35.56" y1="-132.08" x2="35.56" y2="-129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="ANODE$2"/>
-<pinref part="U$3" gate="G$1" pin="ANODE$1"/>
+<pinref part="U$3" gate="G$1" pin="ANODE@2"/>
+<pinref part="U$3" gate="G$1" pin="ANODE@1"/>
 <wire x1="71.12" y1="-132.08" x2="71.12" y2="-129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="ANODE$2"/>
-<pinref part="U$4" gate="G$1" pin="ANODE$1"/>
+<pinref part="U$4" gate="G$1" pin="ANODE@2"/>
+<pinref part="U$4" gate="G$1" pin="ANODE@1"/>
 <wire x1="106.68" y1="-132.08" x2="106.68" y2="-129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="ANODE$2"/>
-<pinref part="U$5" gate="G$1" pin="ANODE$1"/>
+<pinref part="U$5" gate="G$1" pin="ANODE@2"/>
+<pinref part="U$5" gate="G$1" pin="ANODE@1"/>
 <wire x1="142.24" y1="-132.08" x2="142.24" y2="-129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
