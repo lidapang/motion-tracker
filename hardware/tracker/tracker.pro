@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Users/snakeye/Work/Sources/Electronics/motion-tracker/hardware/tracker/tracker.brd
 
-Start at      : 00:00:41 (07/02/14)
-End at        : 00:01:57 (07/02/14)
-Elapsed time  : 00:01:16
+Start at      : 12:33:10 (26/02/14)
+End at        : 12:33:56 (26/02/14)
+Elapsed time  : 00:00:46
 
-Signals       :    31   RoutingGrid: 1.9685 mil  Layers: 2
-Connections   :    78   predefined:  1 ( 0 Vias )
+Signals       :    29   RoutingGrid: 1.9685 mil  Layers: 2
+Connections   :    88   predefined:  15 ( 0 Vias )
 
-Router memory :   7808640
+Router memory :   4494288
 
 Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
 
-Time per pass     :  00:00:17  00:00:12  00:00:14  00:00:15  00:00:18
-Number of Ripups  :         3         0         0         0         0
-max. Level        :         1         0         0         0         0
-max. Total        :         4         0         0         0         0
+Time per pass     :  00:00:08  00:00:09  00:00:08  00:00:10  00:00:11
+Number of Ripups  :         0         0         0         0         0
+max. Level        :         0         0         0         0         0
+max. Total        :         0         0         0         0         0
 
-Routed            :        72        72        72        72        72
-Vias              :        74        57        51        49        48
-Resolution        :    93.6 %    93.6 %    93.6 %    93.6 %    93.6 %
+Routed            :        73        73        73        73        73
+Vias              :        46        31        24        16        17
+Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
-Final             : 93.6% finished
+Final             : 100.0% finished
